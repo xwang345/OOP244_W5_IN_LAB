@@ -73,7 +73,7 @@ namespace sict{
     //
     void Fraction::display() const {
         if(isEmpty()){
-            cout << "no fraction stored" << endl;
+            cout << "no fraction stored";
         } else {
             if(m_denominator == 1){
                 cout << m_numerator;
