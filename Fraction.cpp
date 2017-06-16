@@ -11,7 +11,7 @@ namespace sict{
     // TODO: implement the default constructor
     Fraction::Fraction() {
         m_numerator = 0;
-        m_denominator = 0;
+        m_denominator = -1;
     }
 
     // TODO: implement the two-argument constructor
@@ -21,7 +21,7 @@ namespace sict{
             m_denominator = d;
             reduce();
         }else{
-            m_denominator = 0;
+            m_denominator = -1;
             m_numerator = 0;
         }
     }
@@ -88,7 +88,7 @@ namespace sict{
     // isEmpty returns true if Fraction object is in a safe empty state
     //
     bool Fraction::isEmpty() const {
-        return (m_denominator == 0) ? true : false;
+        return (m_denominator == -1) ? true : false;
     }
 
     // TODO: implement the + operator

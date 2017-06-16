@@ -43,7 +43,7 @@ int main() {
     cout << endl;
 
     Fraction e(8, 4);
-    cout << "Fraction e(8, 2); //";
+    cout << "Fraction e(8, 4); //";
     cout << " e = ";
     e.display();
     cout << endl;
